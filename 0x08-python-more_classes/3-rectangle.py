@@ -65,4 +65,3 @@ class Rectangle:
             if i != self.__height - 1:
                 rectangle.append("\n")
         return ("".join(rectangle))
-
