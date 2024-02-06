@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Describes a function for appending data to a file."""
+"""Defines a file-appending function."""
 
 
 def append_write(filename="", text=""):
@@ -11,6 +11,5 @@ def append_write(filename="", text=""):
     Returns:
         The number of characters appended.
     """
-    with open(filename, 'a', encoding='utf-8') as file:
-        nb_characters_added = file.write(text)
-    return nb_characters_added`
+    with open(filename, "a", encoding="utf-8") as f:
+        return f.write(text)
